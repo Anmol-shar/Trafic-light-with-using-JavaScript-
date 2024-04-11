@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+            display: flex;
+            
+            align-items: center;
+            
+            background-color: rgb(72, 122, 122);
+          
+        }
+        .right{
+            height: 12cm;
+            width: 8cm;
+            background-color: black;
+            margin-left: 4cm;
+            display: flex;
+          
+            flex-direction: column;
+            margin-top: 50px;
+        }
+        .red{
+            padding-top: 50px;
+            font-size: 1.5rem;
+            padding-left: 30px;
+
+        }
+        .red1{
+            padding-top: 50px;
+            font-size: 1.5rem;
+            padding-left: 30px;
+
+        }
+        .blue{
+            padding-top: 50px;
+            font-size: 1.5rem;
+            padding-left: 30px;
+
+        }
+        .yellow{
+            padding-top: 50px;
+            font-size: 1.5rem;
+            padding-left: 30px;
+
+        }
+        button{
+            margin-left: 82px;
+            
+            height: 1cm;
+            width: 1.5cm;
+        }
+        .yellow button{
+            margin-left: 30px;
+            
+            height: 1cm;
+            width: 1.5cm;
+
+        }
+        .blue button{
+            margin-left: 67px;
+            
+            height: 1cm;
+            width: 1.5cm;
+
+        }
+        #trafic{
+            height: 3cm;
+            width: 9cm;
+            background-color: black;
+            margin-left: 9cm;
+            margin-bottom: 3cm;
+           
+            
+        }
+        #light{
+            height: 2cm;
+            width: 2cm;
+            border-radius: 50%;
+            background-color: white;
+            margin-left: 110px;
+            margin-top: 20px;
+           
+        }
+        #light1{
+            height: 2cm;
+            width: 2cm;
+            border-radius: 50%;
+            background-color: white;
+            margin-left: 110px;
+            margin-top: 20px;
+            
+        }
+        #myDIV{
+            height: 2cm;
+            width: 2cm;
+            border-radius: 50%;
+            background-color: white;
+            margin-left: 10px;
+            
+        }
+
+       .red button:focus{
+            background-color: red;
+        }
+       .yellow button:focus{
+            background-color: yellow;
+        }
+       .blue button:focus{
+            background-color: green;
+        }
+
+        .alt{
+            height: 2cm;
+            width: 7cm;
+            background-color: aqua;
+            
+            margin-top: 500px;
+            
+            align-items: left;
+            display: flex;
+            justify-content: left;
+            flex-direction: left;
+        }
+
+
+
+            
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="right">
+        <div class="red">
+            
+                RED
+            
+            <button  onclick="mydiv()">red</button>
+
+            </div>
+        <div class="yellow">
+            
+                YELLOW
+            
+            <button onclick="mydiv1()">yellow</button> 
+            </div>
+        <div class="blue">
+            
+                Green
+            
+            <button onclick="mydiv2()">Green</button>
+            </div>
+        <div class="red1">
+            
+                ALL
+            
+            <button  onclick="mydiv4()">ALL</button>
+            </div>
+            
+        <div class="red1">
+            
+                CLEAR
+            
+            <button  onclick="mydiv5()">CLEAR</button>
+            </div>
+            
+
+    </div>
+    <div id="trafic">
+        <div id="myDIV">
+             <div id="light">
+        <div id="light1"></div></div>
+    </div>
+       
+
+            </div>
+           
+            
+            <script>
+                function mydiv(){
+                    document.getElementById("myDIV").style.backgroundColor="red";
+                    document.getElementById("light").style.backgroundColor="white";
+                    document.getElementById("light1").style.backgroundColor="white";
+                    
+
+                }
+                
+                function mydiv1(){
+                    document.getElementById("myDIV").style.backgroundColor="white";
+                    document.getElementById("light").style.backgroundColor="yellow";
+                    document.getElementById("light1").style.backgroundColor="white";
+                }
+                function mydiv2(){
+                    document.getElementById("light").style.backgroundColor="white";
+                    document.getElementById("light1").style.backgroundColor="green";
+                    document.getElementById("myDIV").style.backgroundColor="white";
+                }
+                function mydiv4(){
+                    document.getElementById("light").style.backgroundColor="yellow";
+                    document.getElementById("light1").style.backgroundColor="green";
+                    document.getElementById("myDIV").style.backgroundColor="red";
+                    
+                }
+                function mydiv5(){
+                    document.getElementById("light").style.backgroundColor="white";
+                    document.getElementById("light1").style.backgroundColor="white";
+                    document.getElementById("myDIV").style.backgroundColor="white";
+
+                }
+
+                
+            </script>
+      
+    
+</body>
+</html>
+
